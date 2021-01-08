@@ -1,5 +1,33 @@
 # Island hop
 
+```The assignment
+Write a computer program that prepares one island tour itinerary. The itinerary includes
+H+1 islands to visit and thus H hops between islands. It also includes the decision whether
+an island hop is airborne or by sea for each hop between two consecutive islands. The
+means of transport to the first island and from the last island onwards is not included in
+the itinerary.
+Although airplanes and helicopters are faster than ships or boats, they're also more
+expensive to operate and generate more emissions, so you and your customers aim to
+minimise airborne hops.
+Satisfying your customers:
+You have prepared an initial sequence of islands to visit and sent this to your customers.
+(This initial sequence is out of scope for this assignment.) Your customers respond with a
+list of preferred island hops and the means of transport for those hops. Each customer is
+satisfied if the final itinerary includes at least one island hop from their list with a
+matching means of transport. There is at most one airborne hop on each customer's list. If
+a customer denotes that they only want an airborne hop between two specific islands,
+they are not satisfied with travelling that leg by sea, and vice versa.
+Specification
+To formulate the above more precisely, prepare the final itinerary as follows:
+1. There are exactly H island hops
+2. Each hop between consecutive islands is either airborne or by sea
+3. Each customer gets at least one hop with a matching means of transport (airborne
+or by sea) from their preferred list
+4. The final itinerary has the minimum number of airborne hops
+5. It may be impossible to satisfy all your customers and your program must detect
+this
+6. There are at most 400 customers
+```
 ## Prerequisites
 Please, use python 3.7+ since I was using dataclasses for this task.
 No external dependencies were used
